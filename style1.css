@@ -1,0 +1,574 @@
+*{
+    padding: 0px;
+    margin: 0%;
+}
+
+body{
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  margin-left: 6%;
+  margin-right: 6%;
+}
+
+.span{
+  display: block;
+  border: 2px solid transparent; 
+  height: 60px;
+    width: auto;
+}
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-image: url(/images/Dodo-Snippet-min-en.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 20px;
+    background-size: cover;
+    overflow-x: hidden;
+    transition: 0.3s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color:black;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: rgba(255, 81, 0, 0.959);
+    font-size: 70px;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    border: 2px solid transparent;
+    display: block;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+    h1{
+      margin-top: 15px;
+      height: 30px;
+      display: inline-block;
+      font-size: 35px;
+    }
+    .container.head1{
+      width:100%;
+      height: 50px;
+      display: inline-block;
+      border: 2px solid red;
+    }
+    .myform{
+      border: 2px solid transparent;
+      width: 350px;
+      height: 500px;
+    }
+    .input{
+      height: 10px;
+      width:250px;
+      margin-top: 10px;
+       border: 2px solid lightgray;
+       border-radius: 5px;
+       appearance: none;
+       padding: 20px;
+    }
+    
+    .input:hover{
+      border:1px solid skyblue;
+    outline:1px solid skyblue;
+    }
+    .input:focus{
+    width:250px;
+    transition: 0.3s ease-in-out;
+    border:1px solid skyblue;
+    outline:1px solid skyblue;
+    }
+    .submit{
+      margin-top: 10px;
+      margin-left: 95px ;
+      padding: 10px;
+      background-color:rgba(255, 81, 0, 0.959); 
+      border-radius: 10px;
+      border: 2px solid rgba(255, 81, 0, 0.959);
+      width:120px;
+    }
+    .submit:hover{
+      color: white;
+    }
+    .head1{
+      height: 50px;
+      display: block;
+      border: 2px solid transparent;
+      width: 100%;
+     }
+    .head2{
+     width: 100%;
+     display: inline-block;
+     backdrop-filter:blur(5px);
+     height: 120px;
+     font-weight: bolder;
+     border: 2px solid transparent;
+     position: relative;
+     position: sticky;
+     position: -webkit-sticky;
+     top:0px;
+     z-index: 1;
+    }
+    .items{
+      margin-top: 35px;
+      display: block;
+      float: right;
+    }
+    .items a{
+      text-decoration: none;
+      color:rgba(255, 81, 0, 0.959);
+    font-weight:bolder;
+    font-size: 15px;
+    display: inline-block;
+    width: 90px;
+    text-align: center;
+    }
+     .items a:hover{
+       color: brown;
+       padding-right: 10px;
+    }
+     .items a::after{
+      content:'\00bb';
+      position:relative;
+      top: 0%;
+      right: -10px;
+      opacity: 0;
+      transition:0.5s;
+    }
+    .items a:hover::after{
+       opacity: 1;
+      right: 0px;
+      transition: 0.5s;
+    }
+    .orders{
+      text-align: center;
+      padding: 15px;
+      background-color:rgba(255, 81, 0, 0.959);
+      color: black;
+      border: 2px solid rgba(255, 81, 0, 0.959);
+      border-radius: 15px;
+      float:right
+    }
+    a.drinks{
+      margin-right:50px;
+    }
+    .orders:hover{
+         color:white;
+         text-decoration: none;
+    }
+    .orders {
+        color: black;
+        float: right;
+    } 
+    .closeord{
+      position: absolute;
+      top:15px;
+      right: 35px;
+      font-size:40px;
+      color: black;
+      text-decoration: none;
+    }
+    .bodycontainer{
+      margin-top: 20px;
+      display:inline-block;
+      width: 100%;
+      height: 100px;
+    }
+    .article{
+      font-size: 30px;
+      font-weight: bolder;
+      float: left;
+      margin-bottom: 30px;
+      margin-top: 30px;
+      margin-left: 20px;
+      border: 2px solid transparent;
+    }
+    .img{    
+      width: 60px;
+      height: 60px;
+    }
+
+    .stock{
+      float: left;
+      margin-left: 35px;
+      text-align: center;
+      border: 2px solid transparent;
+      width: 250px;
+      height: 450px;
+      margin-bottom: 20px;
+      display: block;
+      box-shadow: -4px 4px 4px lightgray;
+    }
+    img{
+      width:250px;
+      height: 300px;
+    }
+   
+    .stock-group{
+      width: 100%;
+      height: 500px;
+      display: block;
+    }
+    .stock:hover{
+      margin-top: 10px;
+    }
+    .add a{
+      padding: 10px;
+      color: black;
+      background-color:  rgba(255, 81, 0, 0.959);
+      outline: 2px solid gray;
+      border-radius: 10px;
+      text-decoration: none;
+      float: center;
+     }
+    .dlog{
+      opacity: 1;
+      display: block;
+       border: 2px solid transparent;
+        margin-bottom: 20px;
+        padding-left: 20px;
+        padding-top: 20px;
+        animation-name: slog;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes slog{
+      0%{opacity: 0.5;}
+      25%{opacity: 0.3;}
+      50%{opacity: 0.2;}
+      100%{opacity: 1;}
+  
+    }
+    .menubar{
+      font-size:30px;
+      cursor:pointer ;
+      float:left;
+       margin-top: 3px;
+    }
+    .login{
+      margin-top: 5px;
+      float: right;
+      border-radius: 8px;
+      padding: 10px;
+      box-shadow: 0px 4px gray;
+    }
+    .login:active{
+      box-shadow: 0px 2px gray;
+      transform: translateY(4px);
+      color: black;
+    }
+    .overlay-login{
+      width: 0px;
+      height: 100%;
+      background-color:none;
+      backdrop-filter: blur(8px);
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: fixed;
+      opacity: 1px;
+      z-index: 1;
+      background-attachment: fixed;
+      overflow: hidden;
+      top: 0%;
+      left: 0%;
+      transition: 1s ;
+      transform:translateX(0%);
+    }
+    
+    .overlay-login .closebtn {
+      position: absolute;
+      display: inline-block;
+      top: 20px;
+      right: 45px;
+      font-size: 60px;
+      text-decoration: none;
+      color: black;
+    border: 2px solid transparent;
+    }
+    .status{
+      width: 100%;
+      height: 310px;
+      display: inline-block;
+      overflow: hidden;
+      padding-bottom: 20px;
+    }
+    .status img{
+      width: 250px;
+      height: 300px;
+      margin-left: 5px;
+      border: 5px solid rgba(255, 81, 0, 0.959);
+      border-radius: 10px;
+      display: inline-block;
+    }
+   .stock2{
+    width: 250px;
+    height: 100px;;
+    
+   }
+    .a-con{
+      display:inline-block;
+      border: 2px solid transparent;
+      width: 100%;
+      height:100px;
+    }
+    .stock2 p{
+      color:gray;
+    }
+    h2{
+      font-size: 15px;
+      font-weight: bolder;
+    }
+    h3{
+      margin-top: 20px;
+      margin-right: 80px;
+      font-size: 30px;
+      float: right;
+    }
+    
+    .login-content{
+      display: block;
+      border:2px solid transparent;
+      width: 450px;
+      height:460px;
+      margin-left: auto;
+      margin-right:auto;
+      padding-left: 150px;
+      margin-top: 4%;
+      background-color: white;
+      box-shadow: -2px 2px 5px black;
+      animation-name: logshad;
+      animation-duration: 5s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+
+    }
+    @keyframes logshad{
+      0%{box-shadow: -2px 2px 5px black;}
+      100%{box-shadow: -4px 4px 5px gray;}
+    }
+ 
+
+    .modal{
+      display:none;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      left: 0%;
+      right: 0%;
+      overflow: hidden;
+      padding-top: 50px;
+      opacity: 0px;
+      top: 0%;
+      background-color:  rgba(0,0,0,0.9);
+      position: fixed;
+    }
+    .modal-content{
+      display: block;
+      max-width: 100%;
+      width: 100%;
+      height: 80%;
+      margin: auto;
+    }
+    #caption{
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+      color: white;
+      font-size: medium;
+      height :150px;
+    }
+    .modal-content,#caption{
+      animation-name: zoom;
+      animation-duration: 2s;
+    }
+    @keyframes zoom{
+      from{transform:scale(0.1);}
+      to{transform: scale(1);}
+    }
+    .close{
+      position: absolute;
+      top:15px;
+      right: 35px;
+      font-size:40px;
+      color: white;
+      text-decoration: none;
+    }
+    .close:hover,:focus{
+      color:gray
+    }
+    .myorder_overlay{
+      width: 0px;
+      height: 100%;
+      background-color:none;
+      backdrop-filter: blur(8px);
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: fixed;
+      opacity: 1px;
+      z-index: 1;
+      background-attachment: fixed;
+      overflow-y: hidden;
+      top: 0%;
+      left: 0%;
+      transition: 1s ;
+      transform:translateX(0%);
+    }
+    footer{
+      text-align: center;
+      width: 100%;
+      padding-bottom: 10px;
+    }
+@media screen and (max-width:450px) {
+  body{
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .login-content{
+    width: auto;
+    height: 460px;
+    margin-left: 1%;
+    margin-right:1%;
+    margin-top: 30%;
+    border: 2px solid red;
+    padding-left: 0px;
+    text-align: center;
+  }
+  .input{
+    width:230px;
+  }
+  .status{
+    height:110px;
+    display: inline-block;
+    overflow: hidden;
+  }
+  .status img{
+    width: 90px;
+    height: 100px;
+    margin-left: 5px;
+    border: 2px solid rgba(255, 81, 0, 0.959);
+    border-radius: 10px;
+    display: inline-block;
+  }
+  .orders{
+    text-align: center;
+    padding: 8px;
+    font-size: 8px;
+    background-color:rgba(255, 81, 0, 0.959);
+    color: black;
+    border: 2px solid rgba(255, 81, 0, 0.959);
+    border-radius: 10px;
+    float:right;
+    margin-top: 0%;
+  }
+  h1{
+    font-size: 20px;
+  }
+  .img{    
+    width: 40px;
+    height: 40px;
+  }
+  .items{
+    margin-top: 10px;
+    display: block;
+    float: right;
+  }
+  .items a{
+    text-decoration: none;
+    color:rgba(255, 81, 0, 0.959);
+  font-weight:bolder;
+  font-size:7px;
+  display: inline-block;
+  text-align: center;
+  width: 42px;
+  }
+  .bodycontainer{
+    margin-top: 10px;
+  }
+  .a-con{
+    height:80px;
+  }
+  .login{
+    float: right;
+    border-radius: 8px;
+    padding: 5px;
+    box-shadow: 0px 6px gray;
+    font-size: 10px;
+    margin-top: 3px;
+  }
+  .login-page{
+    width: 90%;
+    border: 2px solid red;
+    height: fit-content;
+    margin-left:auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-left: auto;
+  }
+  .menubar{
+    font-size:20px;
+    cursor:pointer ;
+    float:left;
+     margin-top: 3px;
+  }
+  a.drinks{
+    margin-right:5px;
+  } 
+  .stock{
+    width: 170px;
+    height: 370px;
+    display:inline-block;
+    margin-left: 5px;
+    margin-bottom: 10px;
+  }
+  img{
+    width:170px;
+    height: 200px;
+  }
+  .stock2{
+    width: 170px;
+    height: 120px;;
+  }
+   .stock-group{
+    display: inline-block;
+    height: 760px;
+    width: 100%;
+   }
+   .stock:hover{
+    margin-top: 0%;
+   }
+}
+
+
+    
+    

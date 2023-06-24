@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dodo Pizza</title>
+    <link rel="stylesheet" href="style1.css" text="text/css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon3.ico">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+     <script src="new.js" defer> </script>   
+    </head>
+    <body onload="openMe()">
+      <div class=" head1">
+         <button  class="login" title="" onclick="showlog()">LOGIN</button>
+         <span class="menubar" onclick="openNav()">&#9776;</span>
+  </div>
+<div class="head2">
+ <span class="span">
+  <img  class="img"src="/images/favicon3.ico">
+  <h1>DODO PIZZA</h1>
+   </span>
+      <P onclick="myorder()" CLASS="orders"> MY ORDERS </P>
+                  <div class="items">
+         <a  class="pizza" href="#c2"> PIZZA</a>
+          <a href="#c1" title="dulux offer/pizza duet/family deal etc...">COMBOS </a>
+           <a href="#c4" title="ice-creams/coffee/sausage rolls/etc">DESERT</a>
+          <a  class="sides"href="#c3 " title="pastas/bbq wings etc....">SIDES</a>
+          <a  class="drinks"href=" ">DRINKS</a>
+            </div>
+            </div>
+          </div>
+          <div id="orders" class="myorder_overlay">
+            <span id="close" class="closeord" onclick="closeorders()">&times;</span>
+           </div>        
+          <div id="myModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+          </div>
+          
+          <div class="bodycontainer">
+            <div class="mainpage">
+              <div id="myNav" class="overlay">
+                <a href="" class="closebtn"onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                  <a href="/index.html"target="_parent">HOME</a>
+                  <a href="/service.html"target="_parent">SERVICES</a>
+                  <a href="/client.html"target="_parent">CLIENTS</a>
+                  <a href="/about.html" target="_parent">ABOUT</a>
+                </div>
+                </div>      
+                <div id="login" class="overlay-login">
+                  <div class="login-content">
+                    <div class="login-page">
+                    <form action=""  class="myform" name="myform" onsubmit="return validation()">
+                 <div class="dlog">
+                  <img  class="img"src="/images/favicon3.ico">
+                 <h3>DODO PIZZA</h3>
+                </div>
+                      <a href="" class="closebtn"onclick="closelog()">&times;</a>
+                  <input name="user" class="input" onchange="upperCasing()" id="inputField" type="text" placeholder="USER-NAME" required><br>
+                  <input name="email" class="input" id="inputField" onchange="validationByFocus()" type="text"  placeholder="EMAIL" required><br>
+                  <p id="demo1" style="color: red; font-size: 15px; margin-left: 90px;"></p>
+                  <input name="tel"  class="input"  onchange="validationByChange()" type="text" placeholder="+234"  required><br>
+                   <p id="demo" style="color: red; font-size: 15px; margin-left: 90px;"></p>
+                  <input  class="input" type="textarea" placeholder="please do leave a comment"><br>
+                  <input class="submit"  value="submit" type="submit">
+                 </form>
+                </div>
+                </div>
+                    </div>
+              <div class=" status">
+                <img  onclick="img()" src="/images/dulux offer.jpg"alt="dulux offer">
+                <img  onclick="img1()"src="/images/familydeal.jpg" alt="family deals">
+                <img  onclick="img2()"src="/images/favicon5.ico" alt="DODO COINS">
+                </div>
+             
+             <div class="a-con"><p id="c1"class="article">COMBOS</p></div>
+             <div class="stock-group">
+  <div class="stock">
+  <img src="/images/CREATE U PIZZA.JPG.jpeg" alt="CREATE UR OWN PIZZA">
+   <div class="stock2"> 
+     <H2> MAKE YOUR DREAM PIZZA</H2>
+     <P>
+      Chicken, pineapple, mozzarella, sweet chili sauce, tomato sauce
+      from ₦ 4,100 
+      </P>
+      </div>
+      <p class="add">
+        <a href="">select&#128722;</a>
+      </p>                            
+  </div>
+  <div class="stock">
+       <img  src="/images/familydeal.jpg"  width="700px" heigth="500px" alt="FAMILY DEAL">
+    </a>
+     <div class="stock2"> 
+       <H2>FAMILY DEAL</H2>
+       <P>
+        Chicken, pineapple, mozzarella, sweet chili sauce, tomato sauce
+        from ₦ 4,100 
+        </P>
+        </div>
+        <p class="add">
+          <a href="">select&#128722;</a>
+        </p>                            
+    </div>
+     <div class="stock">
+      <img src="/images/dulux offer.jpg" alt="DULUX OFFER">
+       <div class="stock2"> 
+         <H2> DULUX OFFER</H2>
+         <P>
+          Chicken, pineapple, mozzarella, sweet chili sauce, tomato sauce
+          from ₦ 4,100 
+          </P>
+          </div>
+          <p class="add">
+            <a href="">select&#128722;</a>
+          </p>                            
+      </div>
+  <div class="stock">
+  <img src="/images/PIZZA DUET.JP.jpeg" alt="PIZZA DUET">
+   <div class="stock2"> 
+     <H2> PIZZA DUET</H2>
+     <P>
+      Chicken, pineapple, mozzarella, sweet chili sauce, tomato sauce
+      from ₦ 4,100 
+      </P>
+      </div>
+      <p class="add">
+        <a href="">select&#128722;</a>
+      </p>                            
+  </div>
+  </div>
+</div>
+<div class="stock-group">
+<div class="stock">
+  <img src="/images/daily boost.jpg" alt="DAILY BOOST">
+   <div class="stock2"> 
+     <H2> DAILY BOOST</H2>
+     <P>
+      Chicken, pineapple, mozzarella, sweet chili sauce, tomato sauce
+      from ₦ 4,100 
+      </P>
+      </div>
+      <p class="add">
+        <a href="">select&#128722;</a>
+      </p>                            
+  </div>
+  <div class="stock">
+    <img src="/images/PASTA DEAL.JPG.jpeg" alt="PASTA DEAL">
+     <div class="stock2"> 
+       <H2>PASTA DEAL</H2>
+       <P>
+        Chicken, pineapple, mozzarella, sweet chili sauce, tomato sauce
+        from ₦ 4,100 
+        </P>
+        </div>
+        <p class="add">
+          <a href="">select&#128722;</a>
+        </p>                            
+    </div>
+   <div class="stock">
+    <img src="/images/COMBO FOR 1.JPG.jpeg" alt="COMBO FOR ONE">
+     <div class="stock2"> 
+       <H2> COMBO FOR ONE</H2>
+       <P>
+        Chicken, pineapple, mozzarella, sweet chili sauce, tomato sauce
+        from ₦ 4,100 
+        </P>
+        </div>
+        <p class="add">
+          <a href="">select&#128722;</a>
+        </p>                            
+    </div>
+    <div class="stock">
+      <img src="/images/combo for 2.jpg" alt="COMBO FOR TWO">
+       <div class="stock2"> 
+         <H2> COMBO FOR TWO</H2>
+         <P>
+          Chicken, pineapple, mozzarella, sweet chili sauce, tomato sauce
+          from ₦ 4,100 
+          </P>
+          </div>
+          <p class="add">
+            <a href="">select&#128722;</a>
+          </p>                            
+      </div>
+      </div>
+          <div class="a-con">
+            <p  id="c2"class="article"> PIZZA </p>
+          </div>
+          <div class="stock-group">
+          <div class="stock">
+          <img src="/images/half and half.jpg" alt="half and half">
+           <div class="stock2"> 
+             <H2> HALF AND HALF</H2>
+             <P>
+              Chicken, pineapple, mozzarella, sweet chili sauce, tomato sauce
+              from ₦ 4,100 
+              </P>
+              </div>
+              <p class="add">
+                <a href="">select&#128722;</a>
+              </p>                            
+          </div>
+      <div class="stock">
+       <img src="/images/chicken curry.jpg" alt="CHICKEN CURRY">
+      <div class="stock2"> 
+        <h2>CHICKEN CURRY</h2>
+        <P>
+          Chicken, pineapple, mozzarella, sweet chili sauce, tomato sauce
+          from ₦ 4,100 
+          </P>
+          </div>
+          <p class="add">
+            <a href="">select&#128722;</a>
+          </p>                            
+      </div>
+       <div class="stock">
+       <img src="/images/spicysausage2.jpeg" alt="spicy sauage">
+      <div class="stock2">
+          <h2>SPICY SAUSAGE</h2>
+          <P>
+            Chicken, pineapple, mozzarella, sweet chili sauce, tomato sauce
+            from ₦ 4,100 
+            </P>
+            </div>
+            <p class="add">
+              <a href="">select&#128722;</a>
+            </p>                            
+        </div>
+     <div class="stock">
+     <img src="/images/beefsuya.jpeg" alt="BEEF SUYA">
+     <div class="stock2"> 
+      <h2> BEEF SUYA</h2>
+      <P>
+        Chicken, pineapple, mozzarella, sweet chili sauce, tomato sauce
+        from ₦ 4,100 
+        </P>
+        </div>
+        <p class="add">
+          <a href="">select&#128722;</a>
+        </p>                            
+     </div>
+     </div>
+     <div class="stock-group">
+     <div class="stock">
+      <img src="/images/cheesychicken2.jpeg" alt="CHEESE CHICKEN">
+      <div class="stock2"> 
+       <h2>CHEESE CHICKEN</h2>
+       <P>
+        Chicken, pineapple, mozzarella, sweet chili sauce, tomato sauce
+        from ₦ 4,100 
+        </P>
+        </div>
+        <p class="add">
+          <a href="">select&#128722;</a>
+        </p>                            
+     </div>
+        <div class="stock">
+      <img src="/images/cheeseburger.jpeg" alt="CHEESEBURGER">
+      <div class="stock2"> 
+       <h2>CHEESEBURGER</h2>
+       <P>
+        Chicken, pineapple, mozzarella, sweet chili sauce, tomato sauce
+        from ₦ 4,100 
+        </P>
+        </div>
+        <p class="add">
+          <a href="">select&#128722;</a>
+        </p>                            
+     </div>
+      <div class="stock">
+        <img src="/images/shawama2.jpeg" alt="SHAWAMA">
+        <div class="stock2"> 
+         <h2>SHAWAMA</h2>
+         <P>
+          Chicken, pineapple, mozzarella, sweet chili sauce, tomato sauce
+          from ₦ 4,100 
+          </P>
+          </div>
+          <p class="add">
+            <a href="">select&#128722;</a>
+          </p>                            
+       </div>
+      <div class="stock">
+        <img src="/images/dodosupreme2.jpeg" alt="DODO SUPREME">
+        <div class="stock2"> 
+         <h2>DODO SUPREME</h2>
+         <P>
+          Chicken, pineapple, mozzarella, sweet chili sauce, tomato sauce
+          from ₦ 4,100 
+          </P>
+          </div>
+          <p class="add">
+            <a href="">select&#128722;</a>
+          </p>                            
+       </div>
+        </div>
+        <div class="stock-group">
+         <div class="stock">
+          <img src="/images/chickenbbq.jpeg" alt="CHEESE BBQ">
+          <div class="stock2"> 
+           <h2>CHEESE BBQ</h2>
+           <P>
+            Chicken, pineapple, mozzarella, sweet chili sauce, tomato sauce
+            from ₦ 4,100 
+            </P>
+            </div>
+            <p class="add">
+              <a href="">select&#128722;</a>
+            </p>                            
+         </div>
+    <div class="stock">
+      <img src="/images/chickensuya.jpeg" alt="CHEESE SUYA">
+      <div class="stock2"> 
+       <h2>CHICKEN SUYA</h2>
+       <P>
+        Chicken, pineapple, mozzarella, sweet chili sauce, tomato sauce
+        from ₦ 4,100 
+        </P>
+        </div>
+        <p class="add">
+          <a href="">select&#128722;</a>
+        </p>                            
+     </div>
+      <div class="stock">
+  <img src="/images/chickensupreme.jpeg" alt="CHICKEN SUPREME">
+  <div class="stock2"> 
+   <h2> CHICKEN SUPREME</h2>
+   <P>
+    Chicken, pineapple, mozzarella, sweet chili sauce, tomato sauce
+    from ₦ 4,100 
+    </P>
+    </div>
+    <p class="add">
+      <a href="">select&#128722;</a>
+    </p>                            
+ </div>
+  <div class="stock">
+   <img src="/images/hawain.jpeg" alt="HAWAIN">
+    <div class="stock2"> 
+    <h2>HAWAIN</h2>
+    <P>
+      Chicken, pineapple, mozzarella, sweet chili sauce, tomato sauce
+      from ₦ 4,100 
+      </P>
+      </div>
+      <p class="add">
+        <a href="">select&#128722;</a>
+      </p>                            
+   </div>
+  </div>
+  <div class="stock-group">
+  <div class="stock">
+    <img src="/images/sweetchili chicken.jpeg" alt="SWEETCHILI CHICKEN">
+    <div class="stock2"> 
+     <h2>SWEETCHILI</h2>
+     <P>
+      Chicken, pineapple, mozzarella, sweet chili sauce, tomato sauce
+      from ₦ 4,100 
+      </P>
+      </div>
+      <p class="add">
+        <a href="">select&#128722;</a>
+      </p>                            
+   </div>
+    <div class="stock">
+      <img src="/images/meatybbq.jpeg" alt="MEATY BBQ">
+      <div class="stock2"> 
+       <h2>MEATY BBQ</h2>
+       <P>
+        Chicken, pineapple, mozzarella, sweet chili sauce, tomato sauce
+        from ₦ 4,100 
+        </P>
+        </div>
+        <p class="add">
+          <a href="">select&#128722;</a>
+        </p>                            
+     </div>
+      <div class="stock">
+  <img src="/images/meatyoverload.jpeg" alt="MEAATY OVERLOAD">
+  <div class="stock2"> 
+   <h2>MEATY OVERLOAD</h2>
+   <P>
+    Chicken, pineapple, mozzarella, sweet chili sauce, tomato sauce
+    from ₦ 4,100 
+    </P>
+    </div>
+    <p class="add">
+      <a href="">select&#128722;</a>
+    </p>                            
+ </div>
+  <div class="stock">
+    <img src="/images/spicymixed.jpeg" alt="SPICY MIXED">
+    <div class="stock2"> 
+     <h2>SPICY MIXED</h2>
+     <P>
+      Chicken, pineapple, mozzarella, sweet chili sauce, tomato sauce
+      from ₦ 4,100 
+      </P>
+      </div>
+      <p class="add">
+        <a href="">select&#128722;</a>
+      </p>                            
+   </div>
+  </div>
+  <div class="a-con">
+    <p id="c3"class="article"> SIDES</p>
+  </div>
+  <div class="stock-group">
+  <div class="stock">
+    <img src="/images/chicken bbq dodster.jpeg" alt="BBQ DODSTER">
+    <div class="stock2"> 
+     <h2>BBQ DODSTER</h2>
+     <P>
+      Chicken, pineapple, mozzarella, sweet chili sauce, tomato sauce
+      from ₦ 4,100 
+      </P>
+      </div>
+      <p class="add">
+        <a href="">select&#128722;</a>
+      </p>                            
+   </div>
+  <div class="stock">
+    <img src="/images/beaf suya dodster.jpeg" alt="BEEF SUYA DODSTER">
+    <div class="stock2"> 
+   <h2>BEEF SUYA DODSTER</h2>
+   <P>
+    Chicken, pineapple, mozzarella, sweet chili sauce, tomato sauce
+    from ₦ 4,100 
+    </P>
+    </div>
+    <p class="add">
+      <a href="">select&#128722;</a>
+    </p>                            
+ </div>
+  <div class="stock">
+    <img src="/images/classic dodster.jpeg" alt="CLASSIC DODSTER">
+    <div class="stock2"> 
+     <h2>CLASSIC DODSTER</h2>
+     <P>
+      Chicken, pineapple, mozzarella, sweet chili sauce, tomato sauce
+      from ₦ 4,100 
+      </P>
+      </div>
+      <p class="add">
+        <a href="">select&#128722;</a>
+      </p>                            
+   </div>
+   <div class="stock">
+     <img src="/images/beef suya pasta.jpeg" alt="BEEF SUYA PASTA">
+     <div class="stock2"> 
+      <h2>BEEF SUYA PASTA</h2>
+      <P>
+        Chicken, pineapple, mozzarella, sweet chili sauce, tomato sauce
+        from ₦ 4,100 
+        </P>
+        </div>
+        <p class="add">
+          <a href="">select&#128722;</a>
+        </p>                            
+     </div>
+     </div>
+     <div class="stock-group">
+     <div class="stock">
+       <img src="/images/chicken mushroom pasta.jpeg" alt="MUSHROOM PASTA">
+       <div class="stock2"> 
+        <h2>CHICKEN MUSHROOM PASTA</h2>
+        <P>
+          Chicken, pineapple, mozzarella, sweet chili sauce, tomato sauce
+          from ₦ 4,100 
+          </P>
+          </div>
+          <p class="add">
+            <a href="">select&#128722;</a>
+          </p>                            
+       </div>
+       <div class="stock">
+         <img src="/images/sausage pasta.jpeg" alt="SAUSAGE PASTA">
+         <div class="stock2"> 
+          <h2>SAUSAGE PASTA</h2>
+          <P>
+            Chicken, pineapple, mozzarella, sweet chili sauce, tomato sauce
+            from ₦ 4,100 
+            </P>
+            </div>
+            <p class="add">
+              <a href="">select&#128722;</a>
+            </p>                            
+         </div>
+    <div class="stock">
+    <img src="/images/cheese rolls.jpeg" alt="CHEESE ROLLS">
+       <div class="stock2"> 
+        <h2>CHEESE ROLLS</h2>
+        <P>
+          Chicken, pineapple, mozzarella, sweet chili sauce, tomato sauce
+          from ₦ 4,100 
+          </P>
+          </div>
+          <p class="add">
+            <a href="">select&#128722;</a>
+          </p>                            
+        </div>                 
+ <div class="stock">
+ <img src="/images/CHEESE SAUSAGE.JPG.jpeg" alt="SAUSAGE ROLLS">
+<div class="stock2"> 
+ <h2>SAUSAGE ROLLS</h2>
+ <P>
+  Chicken, pineapple, mozzarella, sweet chili sauce, tomato sauce
+  from ₦ 4,100 
+  </P>
+  </div>
+  <p class="add">
+    <a href="">select&#128722;</a>
+  </p>                            
+</div>
+     </div>
+     <div class="stock-group">
+   <div class="stock">
+   <img src="/images/bbq chicken.jpeg" alt="BBQ CHICKEN">
+    <div class="stock2"> 
+   <h2>BBQ CHICKEN</h2>
+   <P>
+    Chicken, pineapple, mozzarella, sweet chili sauce, tomato sauce
+    from ₦ 4,100 
+    </P>
+    </div>
+    <p class="add">
+      <a href="">select&#128722;</a>
+    </p>                            
+ </div>
+    <div class="stock">
+   <img src="/images/buffalo wings.jpeg" alt="BUFFALO WINGS">
+   <div class="stock2"> 
+    <h2>BUFFALO WINGS</h2>
+    <P>
+      Chicken, pineapple, mozzarella, sweet chili sauce, tomato sauce
+      from ₦ 4,100 
+      </P>
+      </div>
+      <p class="add">
+        <a href="">select&#128722;</a>
+      </p>                            
+   </div> 
+    <div class="stock">
+      <img src="/images/suya strips.jpeg" alt="SUYA STRIPS">
+      <div class="stock2"> 
+       <h2>SUYA STRIPS</h2>
+       <P>
+        Chicken, pineapple, mozzarella, sweet chili sauce, tomato sauce
+        from ₦ 4,100 
+        </P>
+        </div>
+        <p class="add">
+          <a href="">select&#128722;</a>
+        </p>                            
+     </div>
+      <div class="stock">
+        <img src="/images/chicken strip.jpeg" alt="CHICKEN STRIPS">
+        <div class="stock2"> 
+         <h2>CHICKEN STRIPS</h2>
+         <P>
+          Chicken, pineapple, mozzarella, sweet chili sauce, tomato sauce
+          from ₦ 4,100 
+          </P>
+          </div>
+          <p class="add">
+            <a href="">select&#128722;</a>
+          </p>                            
+       </div>
+        </div> 
+    <div class="stock">
+      <img src="/images/potatoe wedges.jpeg" alt="POTATOE WEDGES">
+      <div class="stock2"> 
+       <h2>POTATOE WEDGES</h2>
+       <P>
+        Chicken, pineapple, mozzarella, sweet chili sauce, tomato sauce
+        from ₦ 4,100 
+        </P>
+        </div>
+        <p class="add">
+          <a href="">select&#128722;</a>
+        </p>                            
+     </div>                                      
+   <div class="a-con">
+    <p id="c4"class="article"> DESERT</p>
+  </div>
+  <div class="stock-group">
+   <div class="stock">
+   <img src="/images/cinnamonroll .jpeg" alt="CINNAMON ROLLS">
+   <div class="stock2"> 
+    <h2>CINNAMON ROLLS</h2>
+    <P>
+      Chicken, pineapple, mozzarella, sweet chili sauce, tomato sauce
+      from ₦ 4,100 
+      </P>
+      </div>
+      <p class="add">
+        <a href="">select&#128722;</a>
+      </p>                            
+   </div> 
+   <div class="stock">
+    <img src="/images/chocolate rolls.jpeg" alt="CHOCOLATE ROLLS">
+    <div class="stock2"> 
+     <h2>CHOCOLATE ROLLS</h2>
+     <P>
+      Chicken, pineapple, mozzarella, sweet chili sauce, tomato sauce
+      from ₦ 4,100 
+      </P>
+      </div>
+      <p class="add">
+        <a href="">select&#128722;</a>
+      </p>                            
+   </div>   
+    <div class="stock">
+      <img src="/images/ice cream stracciatella.jpeg" alt="stracciatella">
+      <div class="stock2"> 
+       <h2>STRACCIATELLA</h2>
+       <P>
+        Chicken, pineapple, mozzarella, sweet chili sauce, tomato sauce
+        from ₦ 4,100 
+        </P>
+        </div>
+        <p class="add">
+          <a href="">select&#128722;</a>
+        </p>                            
+          </div>
+          </div>
+         <footer>@copyright 2023</footer>
+  </body>
+    </html>
